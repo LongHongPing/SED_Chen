@@ -110,7 +110,7 @@ public class APOUtil {
         is.close();
         os.close();
     }
-    public static void erasureEncode(List<File> files,String inPath,String shaPath) throws Exception{
+    public static void erasureEncode(File[] files,String inPath,String shaPath) throws Exception{
         for(File file : files){
             encodeFile(file,inPath,shaPath);
         }
